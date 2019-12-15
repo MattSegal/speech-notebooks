@@ -10,6 +10,6 @@ fi
 . ./env/bin/activate
 pip install -r requirements.txt
 pip install -r $1/requirements.txt
-ln -s "$1/data" data
-ln -s "$1/src" src
-ln -s "$1/checkpoints" checkpoints
+ln -s "../$1/data" notebooks/data
+ln -s "../$1/src" notebooks/src
+ln -s "../$1/checkpoints" notebooks/checkpoints
